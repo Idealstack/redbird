@@ -426,7 +426,7 @@ var opts = {
         http2: true,        
         serverModule = proxyWrap.proxy(require('spdy').server, proxy_opts),
         //Do this if you only want regular https
-        // serverModule = proxyWrap.proxy( require('http'), proxy_opts), 
+        // serverModule = proxyWrap.proxy( require('https'), proxy_opts), 
         port: process.env.HTTPS_PORT,
     }
 }
@@ -485,7 +485,7 @@ __Arguments__
 
 ---------------------------------------
 
-<a name="register"/>
+<a name="register" />
 
 #### Redbird::register(src, target, opts)
 
